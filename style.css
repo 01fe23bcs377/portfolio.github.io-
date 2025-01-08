@@ -1,0 +1,139 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #f6d365, #fda085); /* Light gradient background */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Main Container */
+section {
+    background-color: white;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #4CAF50, #81C784); /* Gradient for header */
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    margin: 1rem 0 0;
+}
+
+/* Section Titles */
+h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+/* List Items */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #e8f5e9; /* Light green background for items */
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+ul li:hover {
+    transform: scale(1.03); /* Slight zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #388E3C;
+}
+
+/* Definition List */
+dl dt {
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+}
+
+dl dd {
+    margin-left: 1.5rem;
+    color: #666;
+}
+
+/* Blockquote */
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #4CAF50;
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+
+/* Button */
+.portfolio-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #FF4500; /* Bright orange for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.portfolio-button:hover {
+    background-color: #FF6347; /* Slightly lighter orange */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    section {
+        padding: 1.5rem;
+    }
+
+    header {
+        padding: 1.5rem;
+    }
+}
